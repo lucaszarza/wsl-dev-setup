@@ -175,7 +175,57 @@ Mostra todos os hooks ativos com matchers e comandos.
 
 ---
 
-## 8. Dicas da comunidade
+## 8. Hook: lembrete de worklog ao encerrar sessão
+
+Exibe um aviso no terminal quando o Claude encerra, caso o `WORKLOG.md` do projeto ainda não tenha sido atualizado hoje. Ver [09-worklog-decisions.md](09-worklog-decisions.md) para o guia completo.
+
+Crie `~/.claude/hooks/remind-worklog.sh`:
+
+```bash
+#!/bin/bash
+# Lembra de atualizar o WORKLOG.md ao final de cada sessão
+
+WORKLOG="WORKLOG.md"
+TODAY=$(date +%Y-%m-%d)
+
+[ ! -f "$WORKLOG" ] && exit 0
+
+if ! grep -q "$TODAY" "$WORKLOG" 2>/dev/null; then
+  echo ""
+  echo "─────────────────────────────────────────"
+  echo " Lembrete: atualize o WORKLOG.md com o"
+  echo " resumo desta sessão antes de encerrar."
+  echo "─────────────────────────────────────────"
+fi
+```
+
+```bash
+chmod +x ~/.claude/hooks/remind-worklog.sh
+```
+
+Adicione ao `~/.claude/settings.json` junto com o hook de notificação sonora:
+
+```json
+"Stop": [
+  {
+    "matcher": "*",
+    "hooks": [
+      {
+        "type": "command",
+        "command": "bash ~/.claude/hooks/session-summary.sh"
+      },
+      {
+        "type": "command",
+        "command": "bash ~/.claude/hooks/remind-worklog.sh"
+      }
+    ]
+  }
+]
+```
+
+---
+
+## 9. Dicas da comunidade
 
 - Hooks devem ser **rápidos** — operações lentas bloqueiam o fluxo do Claude
 - Um hook `PreToolUse` que retorna código de saída não-zero **cancela** a operação

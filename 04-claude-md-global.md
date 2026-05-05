@@ -51,6 +51,11 @@ Crie `~/.claude/CLAUDE.md` com o conteúdo abaixo e adapte ao seu estilo:
 ## Ferramentas
 - Prefira ferramentas de leitura (Read, Grep) antes de editar
 - Não rode comandos destrutivos sem confirmação explícita
+
+## Registro de trabalho
+- Ao início de cada sessão, leia WORKLOG.md e DECISIONS.md se existirem no projeto
+- Ao final de cada sessão, atualize WORKLOG.md com: data, o que foi feito, decisões tomadas, pendências e contexto para próxima sessão
+- Se uma decisão importante de arquitetura, stack ou estrutura for tomada, registre também em DECISIONS.md com contexto e motivo
 ```
 
 ---

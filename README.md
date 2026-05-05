@@ -24,7 +24,8 @@ WSL Ubuntu
     ├── Hooks                    automações de segurança e lint
     ├── MCP Servers              GitHub, filesystem e banco de dados
     ├── Status line              informações visuais no terminal
-    └── gstack                   23 especialistas em slash commands
+    ├── gstack                   23 especialistas em slash commands
+    └── Worklog + Decisions      memória persistente entre sessões
 ```
 
 ---
@@ -56,6 +57,9 @@ Customiza a linha de status e atalhos de teclado dentro das sessões Claude. Int
 
 ### 8. gstack — [08-gstack.md](08-gstack.md)
 O passo que transforma o Claude Code de um assistente em um time. 23 slash commands criados por Garry Tan (CEO do Y Combinator) que adicionam papéis especializados: CEO, designer, eng manager, QA, security officer e release engineer.
+
+### 9. Worklog e Decisions — [09-worklog-decisions.md](09-worklog-decisions.md)
+O Claude não lembra nada entre sessões. Dois arquivos resolvem isso: `WORKLOG.md` (registro cronológico de cada sessão) e `DECISIONS.md` (decisões importantes e o porquê de cada uma). Inclui templates prontos e um hook que lembra de atualizar antes de encerrar.
 
 ---
 
