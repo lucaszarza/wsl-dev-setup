@@ -22,7 +22,7 @@ O resultado: um ciclo completo de ideação → planejamento → implementação
 
 ## Pré-requisitos
 
-Além do Claude Code instalado ([02-claude-instalacao.md](02-claude-instalacao.md)):
+Além do Claude Code instalado ([01-claude-instalacao.md](01-claude-instalacao.md)):
 
 ```bash
 # Bun (runtime necessário para o setup do gstack)

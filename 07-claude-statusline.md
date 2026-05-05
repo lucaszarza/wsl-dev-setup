@@ -44,7 +44,7 @@ RPROMPT='$(claude_status)'
 
 ## 4. Integração com Spaceship Prompt
 
-Se você usa o Spaceship (configurado em [01-terminal-zsh.md](01-terminal-zsh.md)), adicione uma seção customizada ao `.zshrc`:
+Se você usa o Spaceship (configurado em [02-terminal-zsh.md](02-terminal-zsh.md)), adicione uma seção customizada ao `.zshrc`:
 
 ```zsh
 # Seção customizada do Spaceship para Claude
