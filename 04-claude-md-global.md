@@ -52,6 +52,13 @@ Crie `~/.claude/CLAUDE.md` com o conteúdo abaixo e adapte ao seu estilo:
 - Prefira ferramentas de leitura (Read, Grep) antes de editar
 - Não rode comandos destrutivos sem confirmação explícita
 
+## Identidade visual
+- Fonte principal: [ex: Montserrat para títulos, Open Sans para texto]
+- Cores primárias: [ex: #1A2E4A (azul), #E8A020 (âmbar)]
+- Tom de voz: [ex: formal, direto, sem jargões]
+- Logo: assets/logo.png (não distorcer, não recortar)
+- Em apresentações e documentos, sempre aplicar estas diretrizes sem precisar pedir
+
 ## Registro de trabalho
 - Ao início de cada sessão, leia WORKLOG.md e DECISIONS.md se existirem no projeto
 - Ao final de cada sessão, atualize WORKLOG.md com: data, o que foi feito, decisões tomadas, pendências e contexto para próxima sessão
