@@ -144,4 +144,4 @@ Selecione `Theme` no menu interativo.
 
 ## Configuração completa
 
-Com este guia você concluiu a configuração completa. Consulte o [GUIA.md](GUIA.md) para revisar qualquer etapa ou o [README.md](README.md) para uma visão geral do repositório.
+Com este guia você concluiu a configuração do terminal e do Claude Code. O próximo passo é instalar o gstack em [08-gstack.md](08-gstack.md), ou volte ao [README.md](README.md) para revisar qualquer etapa.
