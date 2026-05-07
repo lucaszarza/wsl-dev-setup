@@ -168,6 +168,46 @@ cp ~/.claude/templates/DECISIONS.md ./DECISIONS.md
 
 ---
 
+## Etapa 9 — Financial Services (opcional)
+
+**Guia:** [11-financial-services.md](11-financial-services.md)
+
+Pergunte ao usuário se trabalha com finanças corporativas, modelagem ou M&A. Se sim, instale os plugins financeiros da Anthropic.
+
+Antes de executar, verifique:
+```bash
+cat ~/.claude/settings.json | grep financial 2>/dev/null || echo "não configurado"
+```
+
+Se não estiver configurado, adicione ao `~/.claude/settings.json`:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "claude-for-financial-services": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/financial-services"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "financial-analysis@claude-for-financial-services": true,
+    "model-builder@claude-for-financial-services": true,
+    "statement-auditor@claude-for-financial-services": true,
+    "valuation-reviewer@claude-for-financial-services": true,
+    "investment-banking@claude-for-financial-services": true,
+    "market-researcher@claude-for-financial-services": true
+  }
+}
+```
+
+Pergunte quais plugins o usuário deseja instalar — não instale todos por padrão, pois são opcionais.
+
+Ao final, confirme que os plugins aparecem ao digitar `/plugins` dentro de uma sessão Claude.
+
+---
+
 ## Conclusão
 
 Ao terminar todas as etapas, apresente um resumo de:

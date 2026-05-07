@@ -65,7 +65,8 @@ WSL Ubuntu
 │   ├── Hooks                    segurança, lint e lembrete de worklog
 │   ├── MCP Servers              GitHub, filesystem e banco de dados
 │   ├── gstack                   23 especialistas em slash commands
-│   └── Worklog + Decisions      memória persistente entre sessões
+│   ├── Worklog + Decisions      memória persistente entre sessões
+│   └── Financial Services       agentes de modelagem financeira e M&A
 │
 ├── Terminal
 │   ├── Zsh + Oh My Zsh          shell rápido com plugins
@@ -98,6 +99,7 @@ Se preferir executar etapa por etapa:
 | 8 | [08-gstack.md](08-gstack.md) | 23 slash commands — time virtual de agentes |
 | 9 | [09-worklog-decisions.md](09-worklog-decisions.md) | Memória persistente entre sessões |
 | 10 | [10-alem-da-programacao.md](10-alem-da-programacao.md) | Planilhas, apresentações, documentos e identidade visual |
+| 11 | [11-financial-services.md](11-financial-services.md) | Agentes financeiros Anthropic — DCF, LBO, M&A, auditoria de planilhas |
 
 ---
 
